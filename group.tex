@@ -516,15 +516,100 @@
 \chapter{後期の開発アプリについて}
 
 \section{概要}
+最終成果発表に向けて開発したものは「C-mation」というC言語のプログラミング学習支援ツールである。対象者は未来大1年生である。ユーザーにはこのWebアプリを用いてC言語のプログラミングを学んでもらおうと考えた。このアプリではアニメーションを用いた概念、例題、確認問題という各段階を踏むことによってC言語を理解してもらうことを目的としている。今回は特にC言語の配列の部分の開発を行った。
+\bunseki{新保遥平}
 
 \section{コンテンツ}
 
 \subsection{概念}
+概念の部分ではまず身の回りにあるものを例に配列の説明をアニメーションを用いて行った。配列を説明するにあたり図9.1のように、変数とはなんなのか、変数を家(一戸建て)に例えて説明を行った。次に変数と配列がどこが違うのかを配列をアパートを例にして説明を行った。最後に配列を使うことによって変数より、どのような時に便利なのかを説明した。また、実際に配列の宣言の方法も説明している。
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, bb=0 0 850 638]{img/9thParagraph/gainen_01.png}
+\end{center}
+\caption{概念スライド}
+\end{figure}
+
+\bunseki{新保遥平}
 
 \subsection{例題}
+例題の部分ではまず、図9.2のように例題のソースコードをユーザーに見せて、このソースコードがどのように動くのかを考えさせる。これよって、次の画面でユーザーが頭の中で考えていたソースコードの動きが合っているかを確認することができる。
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, bb=0 0 852 638]{img/9thParagraph/reidai_01.png}
+\end{center}
+\caption{例題スライド1}
+\end{figure}
+
+次に図9.3、図9.4のようにアパートとソースコードを組み合わせて説明を行う。具体的には、1行目のソースコードのではapart[0]には住人が0人、apart[1]には住人が1人、apart[2]には住人が2人、apart[3]には住人が4人が未来アパートに住んでいることをアニメーションで説明している。次に2行目のソースコードのではapart[2]の表示を行うことを示している。また、ソースコードが示している部分がアパートのどのような状態かを合わせて説明している。これによって、ユーザーがソースコードの動きを見ながら配列を理解することができると考えた。
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, bb=0 0 850 640]{img/9thParagraph/reidai_02.png}
+\end{center}
+\caption{例題スライド2-1}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, bb=0 0 850 639]{img/9thParagraph/reidai_03.png}
+\end{center}
+\caption{例題スライド2-2}
+\end{figure}
+
+\bunseki{新保遥平}
 
 \subsection{確認問題}
+確認問題ではインタラクティブな学習を行ってもらうために、図9.5、図9.6のように、実際にユーザーに入力をして問題をといてもらうことを目的とした。
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, bb=0 0 798 516]{img/9thParagraph/kakuninmondai_01.png}
+\end{center}
+\caption{確認問題1-1}
+\end{figure}
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, bb=0 0 647 422]{img/9thParagraph/kakuninmondai_02.png}
+\end{center}
+\caption{確認問題1-2}
+\end{figure}
+
+ユーザーには図9.7、図9.8のように確認問題のソースコードを見ながら確認問題を解いてもらう。この確認問題は未来大の1年生が「プログラミング基礎」の授業で扱う講義スライドを参考に我々が考えた問題である。問題の内容は、与えられた配列に入った8つの値の指定された大小の値を求めるときの繰り返す回数を考えさせるものである。流れとしては、ユーザーが答えだと思う値をキーボードから入力する。
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, bb=0 0 557 576]{img/9thParagraph/kakuninmondai_03.png}
+\end{center}
+\caption{確認問題1-3}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, bb=0 0 557 521]{img/9thParagraph/kakuninmondai_04.png}
+\end{center}
+\caption{確認問題1-4}
+\end{figure}
+
+すると、図9.9、図9.10のように入力した値が正しいか、間違いかをすぐ表示してくれる。そして入力した値が間違っている場合、その後プログラムがどうなるかを説明してくれる。これは、ユーザーがなぜ「この値が間違っているのか」を理解してもらうためである。このようにして、確認問題でユーザーが本当に配列を理解したのかを確かめている。
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, bb=0 0 645 418]{img/9thParagraph/kakuninmondai_05.png}
+\end{center}
+\caption{確認問題1-5}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=10cm, bb=0 0 644 419]{img/9thParagraph/kakuninmondai_06.png}
+\end{center}
+\caption{確認問題1-6}
+\end{figure}
+
+\bunseki{新保遥平}
 
 %10章
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
