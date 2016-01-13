@@ -384,7 +384,7 @@ I would like to plan for differentiation with the software because the suggestio
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=12cm, bb=0 0 573 263]{img/4thParagraph/game.png}
+\includegraphics[width=12cm, bb=0 0 573 263]{img/5thParagraph/game.png}
 \end{center}
 \caption{ゲーム概要}
 \end{figure}
@@ -397,7 +397,7 @@ I would like to plan for differentiation with the software because the suggestio
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=12cm, bb=0 0 564 129]{img/4thParagraph/forButton.png}
+\includegraphics[width=12cm, bb=0 0 564 129]{img/5thParagraph/forButton.png}
 \end{center}
 \caption{ソースコードの入力}
 \end{figure}
@@ -408,7 +408,7 @@ left、right、0〜9、;  などである。タップされたソースボタン
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=12cm, bb=0 0 1136 662]{img/4thParagraph/Prog-ra_programming.png}
+\includegraphics[width=12cm, bb=0 0 1136 662]{img/5thParagraph/Prog-ra_programming.png}
 \end{center}
 \caption{プログラミング画面}
 \end{figure}
@@ -422,33 +422,35 @@ left、right、0〜9、;  などである。タップされたソースボタン
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=12cm, bb=0 0 1136 662]{img/4thParagraph/Prog-ra_programming1.png}
+\includegraphics[width=12cm, bb=0 0 1136 662]{img/5thParagraph/Prog-ra_programming1.png}
 \end{center}
 \caption{ソースコード入力後のプログラミング画面}
 \end{figure}
 
-図5.4のようにプログラムをタップで入力することが出来る。また、図5.5のようのに、move(right, のような次に引数である数字を入れるべきところに「up」をタップしてしまうなど、間違ったタイミングでソースボタンを押すと画面上にエラーが出て、すぐに確認ができる。
+図5.4のようにソースボタンを1つずつタップで入力することでソースコードを書くことが出来る。また、図5.5のようのに
+\\
+\par move(right, 
+\\
+\\
+のような、次に引数である数字を入れるべきところに「up」をタップしてしまうなど、間違ったタイミングでソースボタンをタップすると画面上にエラーが表示され、すぐに確認ができる。
 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=12cm, bb=0 0 1024 598]{img/4thParagraph/error.png}
+\includegraphics[width=12cm, bb=0 0 1024 598]{img/5thParagraph/error.png}
 \end{center}
 \caption{ソースコードがエラー時のプログラミング画面}
 \end{figure}
-ユーザーはソースコードを入力後、プログラミング画面の左上の「下矢印」ボタンで戦闘画面に移動する。
+ユーザーはソースコードを入力後、プログラミング画面の右上の「下矢印」ボタンで戦闘画面に移動する。
 
 \bunseki{新保遥平}
 
 \section{戦闘画面}
-図5.6の戦闘画面はプログラミング画面で入力したソースコードで自機を動かすための画面である。
-戦闘画面の左下にある三角の実行ボタンを押すことで、自機を動かすことが出来る。また戦闘画面、
-左下の「P」と書かれたボタンでプログラミング画面に戻ることができる。現状では、あらかじめ
-設定されたプログラムでしか自機を動かすことが出来ない。
+図5.6の戦闘画面はプログラミング画面で入力したソースコードで自機を動かすための画面である。戦闘画面の左下にある三角の実行ボタンを押すことで、自機を動かすことが出来る。また戦闘画面、左下の「P」と書かれたボタンでプログラミング画面に戻ることができる。現状では、あらかじめ設定されたプログラムでしか自機を動かすことが出来ない。
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=12cm, bb=0 0 1136 662]{img/4thParagraph/Prog-ra_Battle.png}
+\includegraphics[width=12cm, bb=0 0 1136 662]{img/5thParagraph/Prog-ra_Battle.png}
 \end{center}
 \caption{戦闘画面}
 \end{figure}
@@ -456,32 +458,24 @@ left、right、0〜9、;  などである。タップされたソースボタン
 \bunseki{新保遥平}
 
 \subsection{ゲーム性}
-ただプログラミングを学ぶのではなく、ゲームを通してプログラミングを学ぶことでユーザーの
-モチベーションを保ちつつ、アプリを使ってもらえると考えた。また実際にソースコードを組むことで
-自機を思い通りに動かすことが出来たときにプログラミングの学習が深まると考えた。
+私たちはこのアプリで、ただプログラミングを学ぶのではなく、ゲームを通してプログラミングを学ぶことでユーザーのモチベーションを保ちつつ、アプリを使ってもらえると考えた。また実際にソースコードを書くことでプレイヤーである自機を思い通りに動かすことが出来たときにプログラミングの学習が深まると考えた。
  
 \bunseki{新保遥平}
 
 
 \subsection{教育性}
-このアプリではユーザーがより簡潔なソースコードを組み立てられるようになるために、コストと
-ランクがある。ソースのボタンそれぞれにコストが設けられており、問題をクリアした際にコストの
-使用量が少ないほど簡潔にソースコードを組み立てることが出来たと判定し、図5.7のようにランクを
-与える。ランクが低かった場合、より良いランクにつながるヒントを与える。そして高いランクが
-与えられたときに、ユーザーを褒める言葉を表示する。このサイクルが次の問題への意欲につながり、
-より簡潔なソースコードを組み立てることが出来るようになる。この流れをユーザーストーリーと
-したものを図5.8に示す。
+このアプリではユーザーがより簡潔なソースコードを書けるようになるために、コストとランクがある。コストとはソースボタンそれぞれに設けられているコストのことである。問題をクリアした際にコストの使用量が少ないほど簡潔にソースコードを書くことが出来たと判定し、図5.7のようにAランクやBランクなどのランクを与える。与えられたランクが低かった場合、ユーザーにより良いランクにつながるヒントを与える。そして高いランクが与えられたときに、ユーザーを褒める言葉を表示する。このサイクルが次の問題への意欲につながり、より簡潔なソースコードを書くことが出来るようになる。この流れをユーザーストーリーにしたものを図5.8に示す。
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=12cm, bb=0 0 538 376]{img/4thParagraph/cost.png}
+\includegraphics[width=12cm, bb=0 0 538 376]{img/5thParagraph/cost.png}
 \end{center}
 \caption{ランクとヒント}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=14.5cm, bb=0 0 564 129]{img/4thParagraph/userstory.png}
+\includegraphics[width=14.5cm, bb=0 0 564 129]{img/5thParagraph/userstory.png}
 \end{center}
 \caption{ユーザーストーリー}
 \end{figure}
@@ -794,7 +788,7 @@ KPT分析の結果をまとめると、GitHubを正しく運用できていた�
 この概念の説明の部分はGoogleスライドを用いて作成した。配列を説明するにあたり図10.1のように、変数とはなんなのか、変数を家に例えて説明を行った。次に変数と配列の違いについて、配列をアパートを例にして説明を行った。最後に配列を使うことによって変数よりも、どのような点で便利なのかを説明した。また、実際に配列の宣言の方法も説明している。
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=10cm, bb=0 0 850 638]{img/9thParagraph/gainen_01.png}
+\includegraphics[width=10cm, bb=0 0 850 638]{img/10thParagraph/gainen_01.png}
 \end{center}
 \caption{概念スライド}
 \end{figure}
@@ -807,7 +801,7 @@ KPT分析の結果をまとめると、GitHubを正しく運用できていた�
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=10cm, bb=0 0 852 638]{img/9thParagraph/reidai_01.png}
+\includegraphics[width=10cm, bb=0 0 852 638]{img/10thParagraph/reidai_01.png}
 \end{center}
 \caption{例題スライド1}
 \end{figure}
@@ -815,21 +809,19 @@ KPT分析の結果をまとめると、GitHubを正しく運用できていた�
 次に図10.3、図10.4のようにアパートとソースコードを組み合わせて説明を行う。具体的には、
 図10.3のソースコードの1行目ではapart[0]には値を2、apart[1]には値を4、apart[2]には値を3、
 apart[3]には値を4を入れ、アパートに住人が何人ずつ、住んでいるのかをアニメーションで説明している。
-次に、2行目のソースコードではapart[2]の表示を行っている。この例題スライドではソースコードが
-示している部分がアパートのどのような状態かを合わせて説明している。これによって、ユーザーが
-ソースコードの動きを見ながら配列を理解することができると考えた。
+次に、2行目のソースコードではapart[2]の表示を行っている。この例題スライドではソースコードが示している部分がアパートのどのような状態かを合わせて説明している。これによって、ユーザーがソースコードの動きを見ながら配列を理解することができると考えた。
 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=10cm, bb=0 0 850 640]{img/9thParagraph/reidai_02.png}
+\includegraphics[width=10cm, bb=0 0 850 640]{img/10thParagraph/reidai_02.png}
 \end{center}
 \caption{例題スライド2-1}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=10cm, bb=0 0 850 639]{img/9thParagraph/reidai_03.png}
+\includegraphics[width=10cm, bb=0 0 850 639]{img/10thParagraph/reidai_03.png}
 \end{center}
 \caption{例題スライド2-2}
 \end{figure}
@@ -843,30 +835,30 @@ apart[3]には値を4を入れ、アパートに住人が何人ずつ、住ん�
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=10cm, bb=0 0 798 516]{img/9thParagraph/kakuninmondai_01.png}
+\includegraphics[width=10cm, bb=0 0 798 516]{img/10thParagraph/kakuninmondai_01.png}
 \end{center}
 \caption{確認問題 入力画面1-1}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=10cm, bb=0 0 647 422]{img/9thParagraph/kakuninmondai_02.png}
+\includegraphics[width=10cm, bb=0 0 647 422]{img/10thParagraph/kakuninmondai_02.png}
 \end{center}
 \caption{確認問題 入力画面1-2}
 \end{figure}
 
-ユーザーには図10.7、図10.8のように確認問題のソースコードを見ながら確認問題を解いてもらう。この確認問題は未来大学の1年生が「プログラミング基礎」の授業で扱う講義スライドを参考に我々が考えた問題である。問題の内容は、与えられた配列に入った8つの値の指定された大小の値を求めるときの繰り返す回数を考えさせるものである。流れとしては、ユーザーが答えだと思う値をキーボードから入力する。
+ユーザーには図10.7、図10.8のように確認問題のソースコードを見ながら確認問題を解いてもらう。この確認問題は未来大の1年生が「プログラミング基礎」の授業で扱う講義スライドを参考に我々が考えた問題である。問題の内容は、与えられた配列に入った8つの値の指定された大小の値を求めるときの繰り返す回数を考えさせるものである。流れとしては、ユーザーが答えだと思う値をキーボードから入力する。
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=14cm, bb=0 0 2549 2594]{img/9thParagraph/kakuninmondai_03.png}
+\includegraphics[width=14cm, bb=0 0 2549 2594]{img/10thParagraph/kakuninmondai_03.png}
 \end{center}
 \caption{確認問題 ソースコード1-1}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=14cm, bb=0 0 2545 2474]{img/9thParagraph/kakuninmondai_04.png}
+\includegraphics[width=14cm, bb=0 0 2545 2474]{img/10thParagraph/kakuninmondai_04.png}
 \end{center}
 \caption{確認問題 ソースコード1-2}
 \end{figure}
@@ -876,14 +868,14 @@ apart[3]には値を4を入れ、アパートに住人が何人ずつ、住ん�
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=10cm, bb=0 0 645 418]{img/9thParagraph/kakuninmondai_05.png}
+\includegraphics[width=10cm, bb=0 0 645 418]{img/10thParagraph/kakuninmondai_05.png}
 \end{center}
 \caption{確認問題 正解画面}
 \end{figure}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=10cm, bb=0 0 644 419]{img/9thParagraph/kakuninmondai_06.png}
+\includegraphics[width=10cm, bb=0 0 644 419]{img/10thParagraph/kakuninmondai_06.png}
 \end{center}
 \caption{確認問題 不正解画面}
 \end{figure}
